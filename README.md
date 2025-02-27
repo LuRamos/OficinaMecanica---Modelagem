@@ -23,7 +23,7 @@ Esta modelagem é um desafio do **Bootcamp da Heineken - Inteligência Artificia
 
 ### Cliente
 ```
-idCliente (PK)
+id_Cliente (PK)
 Nome
 Telefone
 CPF
@@ -31,44 +31,44 @@ Email
 ```
 ### Veículo
 ```
-idVeiculo (PK)
+id_Veiculo (PK)
 Placa (Único)
 Modelo
 Marca
 Ano
-idCliente (FK)
+id_Cliente (FK)
 ```
 ### Mecânico
 ```
-idMecanico (PK)
+id_Mecanico (PK)
 Nome
 Endereço
 Especialidade
 ```
 ### Equipe
 ```
-idEquipe (PK)
+id_Equipe (PK)
 ```
 ### Ordem de Serviço (OS)
 ```
-idOS (PK)
+id_OrdemDeServico (PK)
 Data de Emissao
 Valor
 Status
 Data de conclusão
-idVeiculo (FK)
-idEquipe (FK)
+id_Veiculo (FK)
+id_Equipe (FK)
 ```
 ### Serviço
 ```
-idServico (PK)
+id_Servico (PK)
 Descricao
 Valor Mão de Obra
 ```
 
 ### Referência Mão de Obra
 ```
-idReferencia (PK)
+id_Referencia (PK)
 idServico (FK)
 Tempo Estimado
 Custo
@@ -76,17 +76,17 @@ Valor Total
 ```
 ### Peças
 ```
-idPecas (PK)
+id_Pecas (PK)
 Nome
 Valor
 ```
 ### Autorização Cliente
 ```
-idAutorizacaoCliente (PK)
+id_AutorizacaoCliente (PK)
 Data Autorização
 Status
-idOS (FK)
-idCliente (FK)
+id_OrdemDeServico (FK)
+id_Cliente (FK)
 ```
 
 ---
