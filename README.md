@@ -97,7 +97,7 @@ idCliente (FK)
 - **Mecânico e Equipe**: (Equipes de Mecânicos) Relacionamento N:M, onde um mecânico pode pertencer a várias equipes, e uma equipe pode ter vários mecânicos.
 - **Ordem de Serviço (OS) e Veículo**: Relacionamento 1:N, onde uma ordem de serviço está associada a um único veículo, mas um veículo pode ter várias ordens de serviço.
 - **Ordem de Serviço (OS) e Equipe**: Relacionamento 1:N, onde uma ordem de serviço é atribuída a uma única equipe, mas uma equipe pode realizar várias ordens de serviço.
-- **Serviço e Ordem de Serviço (OS) **: (OS_Serviço) Relacionamento N:M, onde uma ordem de serviço pode incluir vários serviços e um serviço pode estar em várias ordens de serviço.
+- **Serviço e Ordem de Serviço (OS)**: (OS_Serviço) Relacionamento N:M, onde uma ordem de serviço pode incluir vários serviços e um serviço pode estar em várias ordens de serviço.
 - **Peça e Ordem de Serviço (OS)**: (OS Peça) Relacionamento N:M, onde uma ordem de serviço pode conter várias peças, e uma peça pode ser usada em várias ordens de serviço.
 - **Autorização do Cliente**: Relacionamento 1:1, onde um cliente autoriza cada ordem de serviço antes da execução.
 
